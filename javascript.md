@@ -67,3 +67,12 @@ open() 方法可以查找一个已经存在或者新建的浏览器窗口。
 - close()关闭窗口
 - window.close();   //关闭本窗口
 - <窗口对象>.close();   //关闭指定的窗口
+
+## 第三章-DOM操作
+#### 认识DOM
+文档对象模型DOM（Document Object Model）定义访问和处理HTML文档的标准方法。DOM 将HTML文档呈现为带有元素、属性和文本的树结构（节点树）。
+
+HTML文档可以说由节点构成的集合，三种常见的DOM节点:
+- 1. 元素节点：上图中<html>、<body>、<p>等都是元素节点，即标签。
+- 2. 文本节点:向用户展示的内容，如<li>...</li>中的JavaScript、DOM、CSS等文本。
+- 3. 属性节点:元素属性，如\<a>标签的链接属性href="http://www.imooc.com"。
