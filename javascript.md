@@ -79,15 +79,27 @@ HTML文档可以说由节点构成的集合，三种常见的DOM节点:
 
 #### 通过ID获取元素
 学过HTML/CSS样式，都知道，网页由标签将信息组织起来，而标签的id属性值是唯一的。那么在网页中，我们通过id先找到标签，然后进行操作。
-- document.getElementById(“id”)
+- document.getElementById(“id”)；
 - 获取的元素是一个对象，如想对元素进行操作，我们要通过它的属性或方法。
 
 #### innerHTML 属性
 innerHTML 属性用于获取或替换 HTML 元素的内容。
-- Object.innerHTML
+- Object.innerHTML；
 - Object是获取的元素对象，如通过document.getElementById("ID")获取的元素。
 - 注意书写，innerHTML区分大小写。
 
 #### 改变 HTML 样式
 HTML DOM 允许 JavaScript 改变 HTML 元素的样式。
 - Object.style.property=new style;
+- :Object是获取的元素对象，如通过document.getElementById("id")获取的元素。
+
+#### 显示和隐藏（display属性）
+网页中经常会看到显示和隐藏的效果，可通过display属性来设置。
+- Object.style.display = value；
+- :Object是获取的元素对象，如通过document.getElementById("id")获取的元素。
+
+#### 控制类名（className 属性）
+className 属性设置或返回元素的class 属性。
+- object.className = classname
+- 获取元素的class 属性
+- 为网页内的某个元素指定一个css样式来更改该元素的外观
